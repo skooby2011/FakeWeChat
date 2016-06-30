@@ -33,7 +33,7 @@
     <RadioGroup
         android:id="@+id/tab_bar"
         android:layout_width="match_parent"
-        android:layout_height="56dp"
+        android:layout_height="61dp"
         android:layout_alignParentBottom="true"
         android:background="@color/bg_white"
         android:orientation="horizontal">
