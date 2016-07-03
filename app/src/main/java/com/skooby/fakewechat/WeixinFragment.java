@@ -1,6 +1,6 @@
 package com.skooby.fakewechat;
 
-import android.app.Fragment;
+import android.support.v4.app.Fragment;
 import android.os.Bundle;
 import android.text.Layout;
 import android.view.LayoutInflater;
@@ -11,7 +11,7 @@ import android.widget.TextView;
 /**
  * Created by skooby on 16/7/2.
  */
-public class WeixinFragment extends android.support.v4.app.Fragment {
+public class WeixinFragment extends Fragment {
 
     public WeixinFragment(){}
 

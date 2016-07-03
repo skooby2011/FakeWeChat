@@ -1,6 +1,6 @@
 package com.skooby.fakewechat;
 
-import android.app.Fragment;
+import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.view.ViewGroup;
@@ -41,7 +41,7 @@ public class MyFragmentPagerAdapter extends FragmentPagerAdapter {
     }
 
     @Override
-    public android.support.v4.app.Fragment getItem(int position){
+    public Fragment getItem(int position){
         android.support.v4.app.Fragment fragment = null;
         switch (position) {
             case MainActivity.PAGE_ONE:
