@@ -20,7 +20,7 @@
             android:layout_centerInParent="true"
             android:gravity="center"
             android:text="微信"
-            android:textColor="@color/text_topbar"
+            android:textColor="@color/text_white"
             android:textSize="18sp"/>   
         <View
             android:layout_width="match_parent"
@@ -71,14 +71,14 @@
         android:layout_above="@+id/tab_bar"
         android:background="@color/div_white"/>
 
-    <FrameLayout
-        android:id="@+id/ly_content"
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vpager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@id/div_tab_bar"
         android:layout_below="@id/ly_top_bar">
 
+    </android.support.v4.view.ViewPager>
 
-    </FrameLayout>
 
 </RelativeLayout>
