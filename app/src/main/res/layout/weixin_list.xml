@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="70">
+
+    <RelativeLayout
+        android:id="@+id/weixin_icon"
+        android:layout_width="70dp"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/icon_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:layout_margin="5dip"
+            android:background="@drawable/icon_image"
+            android:src="@mipmap/luoji_img"/>
+
+        <TextView
+            android:id="@+id/icon_num"
+            style="@style/tab_menu_bgnum"
+            android:layout_toRightOf="@id/icon_image"
+            android:text="9"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/weixin_name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="10dp"
+                android:text="逻辑思维"/>
+
+            <TextView
+                android:id="@+id/update_time"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:text="16:30"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/weixin_content"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:singleLine="true"
+            android:text="[语音】"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>
