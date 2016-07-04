@@ -42,7 +42,7 @@ public class MyFragmentPagerAdapter extends FragmentPagerAdapter {
 
     @Override
     public Fragment getItem(int position){
-        android.support.v4.app.Fragment fragment = null;
+        Fragment fragment = null;
         switch (position) {
             case MainActivity.PAGE_ONE:
                 fragment = weixinFragment;
