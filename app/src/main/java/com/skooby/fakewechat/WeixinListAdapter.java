@@ -45,7 +45,7 @@ public class WeixinListAdapter extends BaseAdapter {
             convertView = LayoutInflater.from(myContext).inflate(R.layout.weixin_list,parent,false);
             viewHolder = new ViewHolder();
             viewHolder.icon_img = (ImageView)convertView.findViewById(R.id.icon_image);
-            
+
 
 
         }
