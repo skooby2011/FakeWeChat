@@ -45,18 +45,26 @@ public class WeixinListAdapter extends BaseAdapter {
             convertView = LayoutInflater.from(myContext).inflate(R.layout.weixin_list,parent,false);
             viewHolder = new ViewHolder();
             viewHolder.icon_img = (ImageView)convertView.findViewById(R.id.icon_image);
-
-
-
+            viewHolder.icon_num = (TextView)convertView.findViewById(R.id.icon_num);
+            viewHolder.weixin_name = (TextView)convertView.findViewById(R.id.weixin_name);
+            viewHolder.update_time = (TextView)convertView.findViewById(R.id.update_time);
+            viewHolder.weixin_content = (TextView)convertView.findViewById(R.id.weixin_content);
+            convertView.setTag(viewHolder);
+        }else{
+            viewHolder = (ViewHolder) convertView.getTag();
         }
-
-        private class ViewHolder(){
-            ImageView icon_img;
-
-
-        }
-
+        viewHolder.icon_img.setImageResource(weixinLists.get(position).getIcon_img());
+        viewHolder.icon_num.setText(weixinLists.get(position).getIcon_num());
+        viewHolder.weixin_name.setText(weixinLists.get(position).getWeixin_name());
+        viewHolder.update_time.setText(weixinLists.get(position).getUpdate_time());
+        viewHolder.weixin_content.setText(weixinLists.get(position).getWeixin_content());
+        return convertView;
     }
-
-
+    private class ViewHolder{
+        ImageView icon_img;
+        TextView icon_num;
+        TextView weixin_name;
+        TextView update_time;
+        TextView weixin_content;
+    }
 }
