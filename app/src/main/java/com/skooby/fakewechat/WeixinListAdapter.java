@@ -8,6 +8,8 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import java.lang.reflect.Array;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -15,10 +17,10 @@ import java.util.List;
  */
 public class WeixinListAdapter extends BaseAdapter {
 
-    private List<WeixinList> weixinLists;
+    private ArrayList<WeixinList> weixinLists;
     private Context myContext;
 
-    public WeixinListAdapter(List<WeixinList> weixinLists,Context myContext){
+    public WeixinListAdapter(ArrayList<WeixinList> weixinLists,Context myContext){
         this.weixinLists = weixinLists;
         this.myContext = myContext;
     }
