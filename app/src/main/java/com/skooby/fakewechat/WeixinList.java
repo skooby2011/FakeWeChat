@@ -5,14 +5,14 @@ package com.skooby.fakewechat;
  */
 public class WeixinList {
     private int icon_img;
-    private int icon_num;
+    private String icon_num;
     private String weixin_name;
     private String update_time;
     private String weixin_content;
 
     public WeixinList(){}
 
-    public WeixinList(int icon_img,int icon_num,String weixin_name,String update_time,String weixin_content){
+    public WeixinList(int icon_img,String icon_num,String weixin_name,String update_time,String weixin_content){
         this.icon_img = icon_img;
         this.icon_num=icon_num;
         this.weixin_name = weixin_name;
@@ -24,7 +24,7 @@ public class WeixinList {
         return icon_img;
     }
 
-    public int getIcon_num(){
+    public String getIcon_num(){
         return icon_num;
     }
 
@@ -44,7 +44,7 @@ public class WeixinList {
         this.icon_img = icon_img;
     }
 
-    public void setIcon_num(int icon_num){
+    public void setIcon_num(String icon_num){
         this.icon_num=icon_num;
     }
 

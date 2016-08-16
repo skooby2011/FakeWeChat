@@ -25,14 +25,16 @@ public class WeixinFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,Bundle savedInstanceState){
-        View view = inflater.inflate(R.layout.fg_content,container,false);
-        fg_weixin_list=(ListView)view.findViewById(R.id.fg_weixin_list);
-        weixinLists = new ArrayList<WeixinList>();
-        WeixinList luoji = new WeixinList(R.mipmap.luoji_img,6,"逻辑思维","6:30","[语音]");
-        WeixinList xiaoy = new WeixinList(R.mipmap.xiaoy,1,"xiaoy","昨天","infi");
+        View view = inflater.inflate(R.layout.fg_weixin_list,container,false);
+        fg_weixin_list=(ListView)view.findViewById(R.id.weixin_list);
+        weixinLists = new ArrayList<>();
+        WeixinList luoji = new WeixinList(R.mipmap.luoji_img,"1","逻辑思维","6:30","[语音]");
+        WeixinList xiaoy = new WeixinList(R.mipmap.xiaoy,"1","xiaoy","昨天","infi VS Fly100%");
+        WeixinList gongfu = new WeixinList(R.mipmap.gongfu_img,"5","功夫财经","9:00","李大霄：婴儿底抱紧紧");
         weixinLists.add(luoji);
         weixinLists.add(xiaoy);
-        WeixinListAdapter weixinListAdapter = new WeixinListAdapter(weixinLists,getActivity());
+        weixinLists.add(gongfu);
+        WeixinListAdapter weixinListAdapter = new WeixinListAdapter(weixinLists,this.getContext());
         fg_weixin_list.setAdapter(weixinListAdapter);
         return view;
     }
