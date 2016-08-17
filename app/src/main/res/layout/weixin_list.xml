@@ -15,15 +15,12 @@
             android:layout_height="match_parent"
             android:adjustViewBounds="true"
             android:layout_margin="5dip"/>
-            <!--android:background="@drawable/icon_image"-->
-            <!--android:src="@mipmap/luoji_img"-->
-            />
 
         <TextView
             android:id="@+id/icon_num"
             style="@style/tab_menu_bgnum"
             android:layout_toRightOf="@id/icon_image"/>
-            <!--android:text="9"/>-->
+
     </RelativeLayout>
 
     <LinearLayout
@@ -42,8 +39,7 @@
                 android:layout_height="match_parent"
                 android:layout_alignParentLeft="true"
                 android:layout_marginTop="10dp"
-                android:textColor="@color/text_yellow"/>
-                <!--android:text="逻辑思维"/>-->
+                android:textColor="@color/text_black"/>
 
             <TextView
                 android:id="@+id/update_time"
@@ -52,8 +48,7 @@
                 android:layout_alignParentRight="true"
                 android:layout_marginTop="10dp"
                 android:layout_marginRight="10dp"
-                android:textColor="@color/text_yellow"/>
-                <!--android:text="16:30"/>-->
+                android:textColor="@color/text_black"/>
 
         </RelativeLayout>
 
@@ -65,9 +60,7 @@
             android:layout_marginTop="5dp"
             android:layout_marginLeft="5dp"
             android:singleLine="true"
-            android:textColor="@color/text_yellow"/>
-            <!--android:text="[语音】"/>-->
-
+            android:textColor="@color/text_black"/>
 
     </LinearLayout>
 

@@ -7,6 +7,8 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 
+import com.astuetz.PagerSlidingTabStrip;
+
 public class MainActivity extends AppCompatActivity implements RadioGroup.OnCheckedChangeListener,ViewPager.OnPageChangeListener{
 
     //UI控件
@@ -17,8 +19,11 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
     private RadioButton rb_find;
     private RadioButton rb_profile;
     private ViewPager vpager;
+    private PagerSlidingTabStrip pagerTab;
 
     private MyFragmentPagerAdapter mAdapter;
+
+
 
     //各个页的常量
     public static final int  PAGE_ONE =0;
@@ -49,6 +54,7 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
         vpager.setAdapter(mAdapter);
         vpager.setCurrentItem(0);
         vpager.addOnPageChangeListener(this);
+//        pagerTab.setViewPager(vpager);   //添加PagerSlidingTabStrip
     }
 
     @Override
